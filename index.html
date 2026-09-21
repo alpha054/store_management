@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Easy Store Manager</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#172033}
+header{background:#111827;color:#fff;padding:22px 28px;display:flex;justify-content:space-between;align-items:center;gap:15px}
+header h1{margin:0;font-size:24px}
+header p{margin:5px 0 0;color:#cbd5e1}
+.container{max-width:1100px;margin:35px auto;padding:0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px}
+.card{background:#fff;border-radius:18px;padding:25px;box-shadow:0 8px 25px rgba(0,0,0,.08);border:1px solid #e5e7eb}
+.card h2{margin:0 0 8px;font-size:22px}
+.card p{color:#64748b;margin:0 0 20px}
+.links{display:grid;gap:12px}
+a{display:block;text-decoration:none;padding:14px 16px;border-radius:12px;font-weight:700;text-align:center}
+.store{background:#eef2ff;color:#3730a3}
+.admin{background:#111827;color:#fff}
+.open{background:#10b981;color:#fff}
+footer{text-align:center;color:#64748b;padding:25px}
+.badge{display:inline-block;padding:5px 9px;border-radius:20px;background:#e0f2fe;color:#0369a1;font-size:12px;font-weight:bold;margin-bottom:12px}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Easy Store Manager</h1>
+    <p>Manage your two online stores from one page</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <span class="badge">NFC STORE</span>
+      <h2>NFC Easy Store</h2>
+      <p>Open the customer store or its Google Apps Script admin panel.</p>
+      <div class="links">
+        <a class="store" href="https://nfc.easy-store.workers.dev/" target="_blank">🌐 Open NFC Store</a>
+        <a class="admin" href="https://script.google.com/macros/s/AKfycbwDq4zSu5VUsygPqAY0agRUXrvHM8i6iAsno29569QJrty9gdvrh6OfJKv4nMtR8cLf/exec?page=admin" target="_blank">⚙️ Open NFC Admin</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="badge">EASY STORE</span>
+      <h2>Easy Store</h2>
+      <p>Open the customer store or its Google Apps Script admin panel.</p>
+      <div class="links">
+        <a class="store" href="https://es.easy-store.workers.dev/" target="_blank">🌐 Open Easy Store</a>
+        <a class="admin" href="https://script.google.com/macros/s/AKfycbwgrRBbmhKbyQpmiGy8uaQfWvfqbSEMwRs5azEoqnfN8J0J92GDWEVvFUyqousfzRXr/exec?page=admin" target="_blank">⚙️ Open Easy Store Admin</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="card" style="margin-top:22px;text-align:center">
+    <h2>Quick Access</h2>
+    <p>Choose an admin panel to manage products and settings.</p>
+    <div class="links" style="max-width:500px;margin:auto">
+      <a class="open" href="https://script.google.com/macros/s/AKfycbwDq4zSu5VUsygPqAY0agRUXrvHM8i6iAsno29569QJrty9gdvrh6OfJKv4nMtR8cLf/exec?page=admin" target="_blank">⚙️ Manage NFC Store</a>
+      <a class="open" href="https://script.google.com/macros/s/AKfycbwgrRBbmhKbyQpmiGy8uaQfWvfqbSEMwRs5azEoqnfN8J0J92GDWEVvFUyqousfzRXr/exec?page=admin" target="_blank">⚙️ Manage Easy Store</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Easy Store Manager
+</footer>
+
+</body>
+</html>
